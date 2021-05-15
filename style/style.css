@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1000px;
+    width: 100%;
+}
+/*editando nav*/
+ /*Haciendo que navbar sea fijo*/
+#navbar {
+    background-color: #D8D8D8;
+    border-right: double 5px #4B4B4B;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+}
+#navbar header h1 {
+    color: #4B4B4B;
+    margin: 20px 5px;
+    text-align: center;
+}
+/*Se agrego un scroll a div*/
+#navbar div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    overflow: auto;
+}
+#navbar  div a {
+    text-decoration: none;
+    color: #4B4B4B;
+    padding: 20px;
+    width: 99%;
+    flex-wrap: wrap;
+
+}
+#navbar   div a:hover {
+    background-color: white;
+
+}
+
+
+
+
+/*diseño de main pc*/
+
+#main-doc {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    left: 25%;
+    max-width: 100%;
+    color: #4B4B4B;
+}
+.main-section {
+    width: 100%;
+    margin: 10% 5%;
+
+}
+.main-section header {
+    border-bottom: 1px solid #4B4B4B;
+    margin-bottom: 20px;
+}
+.main-section article code {
+    background-color: #4B4B4B;
+    color: #e7e7e7;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.lista {
+    width: 70%;
+    margin: 10% 5%;
+
+}
+.main-section article .lista ul {
+    margin-top: 20px;
+}
+.main-section article p {
+    margin-bottom: 20px;
+}
+
+/*Diseño para tablet*/
+@media screen and (min-width: 640px) and (max-width: 1000px){
+    #navbar div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 70%;
+        overflow: inherit;
+    }
+    #navbar  div a {
+        padding: 5px 10px;
+        width: 99%;
+        flex-wrap: wrap;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 640px){
+    body {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #navbar {
+        background-color: #D8D8D8;
+        border-right: none;
+        width: 100%;
+        height: 300px;
+        position: static;
+        text-align: center;
+
+    }
+    #navbar div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 60%;
+        overflow-y: scroll;
+    }
+    #navbar  div a {
+        text-decoration: none;
+        color: #4B4B4B;
+        padding: 10px;
+        width: 100%;
+        flex-wrap: wrap;
+        border-top: 1px black dotted;
+        
+    }
+    #main-doc {
+        background-color: white;
+        display: flex;
+        flex-flow: row wrap;
+        position: static;
+        left: 0;
+        max-width: 100%;
+        color: #4B4B4B;
+    }
+}
