@@ -22,7 +22,8 @@ body {
     text-align: center;
 }
 /*Se agrego un scroll a div*/
-#navbar div {
+#navbar div { 
+    margin-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,23 +59,30 @@ body {
 }
 .main-section {
     width: 100%;
-    margin: 10% 5%;
+    padding: 3% 5%;
 
 }
 .main-section header {
     border-bottom: 1px solid #4B4B4B;
     margin-bottom: 20px;
 }
+#portada {
+    width: 100%;
+    margin-bottom: 2%;
+}
 .main-section article code {
     background-color: #4B4B4B;
     color: #e7e7e7;
     border-radius: 10px;
     padding: 10px;
+    width: 80%;
+    display: block;
+    margin: 4% 0;
 
 }
 .lista {
     width: 70%;
-    margin: 10% 5%;
+    margin: 4% 5%;
 
 }
 .main-section article .lista ul {
@@ -82,6 +90,7 @@ body {
 }
 .main-section article p {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /*Diseño para tablet*/
@@ -113,14 +122,16 @@ body {
         height: 300px;
         position: static;
         text-align: center;
+        padding-bottom: 20px;
 
     }
     #navbar div {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 60%;
+        height: 70%;
         overflow-y: scroll;
+        margin-top: 30px;
     }
     #navbar  div a {
         text-decoration: none;
